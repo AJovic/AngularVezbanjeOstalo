@@ -1,0 +1,26 @@
+<p>edit works!</p>
+
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="p-col-12 p-md-4">
+        <div class="p-inputgroup">
+            <input type="text" pInputText placeholder="id" name="id" [(ngModel)]="employee.id">
+        </div>
+    </div>
+    <div class="p-col-12 p-md-4">
+        <div class="p-inputgroup">
+            <input type="text" pInputText placeholder="name" name="name" [(ngModel)]="employee.name">
+        </div>
+    </div>
+    <div class="p-col-12 p-md-4">
+        <div class="p-inputgroup">
+            <input type="text" pInputText placeholder="email" name="email" [(ngModel)]="employee.email">
+        </div>
+    </div>
+    <div class="p-col-12 p-md-4">
+        <div class="p-inputgroup">
+            <input type="text" pInputText placeholder="phone" name="phone" [(ngModel)]="employee.phone">
+        </div>
+    </div>
+    <button pButton type="submit" label="Submit" class="p-button-text"></button>
+</form>
+

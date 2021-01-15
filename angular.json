@@ -28,9 +28,15 @@
               "src/assets"
             ],
             "styles": [
+
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+
+            ]
           },
           "configurations": {
             "production": {
@@ -124,5 +130,8 @@
       }
     }
   },
-  "defaultProject": "proba2"
+  "defaultProject": "proba2",
+  "cli": {
+    "analytics": "0d1037f8-32bd-42b7-9760-2d8c91e4f695"
+  }
 }
