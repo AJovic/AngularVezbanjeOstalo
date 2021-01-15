@@ -13,6 +13,9 @@ import { HeaderComponent } from './layout/header/header.component';
 import { EmployeesComponent } from './pages/employees/employees.component';
 import {TableModule} from 'primeng/table';
 import { EditComponent } from './pages/employees/edit/edit.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+// import { InMemoryDataService } from './in-memory-data.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,12 @@ import { EditComponent } from './pages/employees/edit/edit.component';
     FormsModule,
     BrowserAnimationsModule,
     ViewModule,
-    TableModule
+    TableModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
